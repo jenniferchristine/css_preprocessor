@@ -26,11 +26,11 @@ header>div {
 section {
     @include base.size(100%, auto, 650px);
     margin: 0 auto;
-    padding-top: 5em;
-    padding-bottom: 15em;
+    box-sizing: border-box;
+    padding: 5em 2em 10em 2em;
 }
 
-.grid {
+.img-holder {
     display: flex;
     gap: 2em;
     padding-top: 5em;
@@ -50,7 +50,7 @@ p {
 
 a {
     text-decoration: none;
-    color: base.$primary-color;
+    color: base.$light_color;
 
     .btn {
         @include base.btn-text(20px, 600, 1px);
@@ -62,12 +62,17 @@ a {
 }
 
 .btn:hover {
-    @include base.theme-colors($light-theme: false);
+    background-color: base.$darkest;
 }
 
 .return-btn {
     @extend .btn;
-    background-color: base.$darkened;
+    background-color: base.$brightened;
+}
+
+.goto-btn {
+    @extend .btn;
+    background-color: base.$dark_color;
 }
 
 footer {
@@ -187,9 +192,12 @@ nav {
     nav,
     header,
     body,
-    footer,
     nav li>a {
         @include base.theme-colors($light-theme: false)
+    }
+
+    footer {
+        background-color: base.$darkest;
     }
 
     a {
@@ -273,5 +281,15 @@ nav {
         font-weight: 600;
         letter-spacing: 0.5px;
         margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 1024) {
+    .grid {
+        flex-direction: column;
+
+        img {
+            width: 70%;
+        }
     }
 }
