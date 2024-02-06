@@ -4,7 +4,7 @@
 65C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\.gitignore133516931332832783 0
 99C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\node_modules\weak-lru-cache\rollup.config.js133517225761676004 0
 99C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\node_modules\caniuse-lite\data\regions\BY.js133517225770935244 0
-67C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\package.json133517227840369012 0
+67C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\package.json133517281596226225 0
 149C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\node_modules\@parcel\optimizer-htmlnano\node_modules\css-tree\lib\syntax\pseudo\nth-of-type.js133517225771209807 0
 105C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\node_modules\posthtml\node_modules\posthtml-parser133517225762036167 1
 76C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\node_modules\get-port133517225761258054 1
@@ -13,7 +13,7 @@
 92C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\node_modules\node-addon-api\nothing.c133517225757814233 0
 90C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\node_modules\parent-module\index.js133517225758889838 0
 98C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\node_modules\svgo\plugins\removeComments.js133517225769852420 0
-59C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\dist133517278147322423 1
+59C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\dist133517281615315003 1
 111C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\node_modules\css-tree\cjs\syntax\node\MediaCondition.cjs133517225770637610 0
 95C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\node_modules\string_decoder\package.json133517228017391214 0
 92C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\node_modules\escalade\sync\index.d.ts133517225763339544 0
@@ -72,7 +72,7 @@
 95C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\node_modules\lmdb\src\ordered-binary.cpp133517225771319745 0
 94C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\node_modules\css-tree\lib\data-patch.js133517225773319789 0
 80C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\node_modules\sass\sass.js133517225899045785 0
-73C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\src\css\_base.scss133517277788418501 0
+73C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\src\css\_base.scss133517279021825829 0
 126C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\node_modules\csso\node_modules\css-tree\cjs\syntax\atrule\font-face.cjs133517225768175008 0
 87C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\node_modules\base-x\src\index.js133517225758366919 0
 69C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\src\index.html133517272584864564 0
@@ -238,7 +238,7 @@
 92C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\node_modules\prebuild-install\util.js133517228017910908 0
 92C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\node_modules\@swc\core\postinstall.js133517225761228040 0
 114C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\node_modules\lmdb\dependencies\lmdb\libraries\liblmdb\mdb.c133517225769610631 0
-75C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\src\css\_layout.scss133517278795440856 0
+75C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\src\css\_layout.scss133517281112583056 0
 112C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\node_modules\csso\node_modules\css-tree\lib\syntax\config133517225775016916 1
 72C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\node_modules\.bin133517228018833831 1
 104C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\node_modules\csso\cjs\replace\property\border.cjs133517225764827321 0
@@ -865,7 +865,7 @@
 80C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\node_modules\string-width133517225761203002 1
 104C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\node_modules\css-select\node_modules\domutils\lib133517225769862385 1
 82C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\node_modules\string_decoder133517228017514699 1
-80C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\dist\favicon.824cf0c5.ico133517278146694090 0
+80C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\dist\favicon.824cf0c5.ico133517281614691210 0
 151C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\node_modules\@parcel\optimizer-htmlnano\node_modules\css-tree\lib\definition-syntax\tokenizer.js133517225772163630 0
 138C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\node_modules\sharp\vendor\8.13.3\win32-x64\include\libxml2\libxml\parserInternals.h133117882010000000 0
 118C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\node_modules\@parcel\source-map\parcel_sourcemap_wasm\dist-node133517225771199834 1
@@ -1361,7 +1361,7 @@
 89C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\node_modules\cosmiconfig\README.md133517225766382655 0
 130C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\node_modules\sharp\vendor\8.13.3\win32-x64\include\glib-2.0\gio\gresolver.h133117882010000000 0
 99C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\node_modules\caniuse-lite\data\regions\KZ.js133517225778635698 0
-77C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\dist\index.18dbc454.js133517278146824090 0
+77C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\dist\index.18dbc454.js133517281614636254 0
 121C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\node_modules\@parcel\rust\parcel-node-bindings.win32-x64-msvc.node133517225781426920 0
 99C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\node_modules\@parcel\source-map\dist\wasm.js133517225765833521 0
 81C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\node_modules\timsort\build133517225762679895 1
@@ -1660,7 +1660,7 @@
 116C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\node_modules\caniuse-lite\data\features\css-default-pseudo.js133517225773001501 0
 106C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\node_modules\sass\types\logger\source_location.d.ts133517225901310239 0
 106C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\node_modules\css-tree\lib\syntax\node\IdSelector.js133517225773697990 0
-82C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\dist\index.8c1c22dc.css.map133517278147004715 0
+82C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\dist\index.8c1c22dc.css.map133517281614997912 0
 128C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\node_modules\csso\node_modules\css-tree\lib\syntax\function\expression.js133517225773339710 0
 96C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\node_modules\strip-json-comments\index.js133517228017204925 0
 95C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\node_modules\strip-json-comments\license133517228017341344 0
@@ -2598,7 +2598,7 @@
 130C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\node_modules\sharp\vendor\8.13.3\win32-x64\include\glib-2.0\glib\gvariant.h133117882010000000 0
 136C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\node_modules\sharp\vendor\8.13.3\win32-x64\include\glib-2.0\glib\gversionmacros.h133117882010000000 0
 84C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\node_modules\clone\.npmignore133517225758986855 0
-81C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\dist\two_img.4e398e33.webp133517278146694090 0
+81C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\dist\two_img.4e398e33.webp133517281614666166 0
 128C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\node_modules\sharp\vendor\8.13.3\win32-x64\include\glib-2.0\glib\gwin32.h133117882010000000 0
 143C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\node_modules\sharp\vendor\8.13.3\win32-x64\include\glib-2.0\glib\deprecated\gallocator.h133117882010000000 0
 117C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\node_modules\css-select\lib\esm\pseudo-selectors\subselects.js133517225766227426 0
@@ -3353,7 +3353,7 @@
 94C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\node_modules\picomatch\lib\picomatch.js133517225761815943 0
 107C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\node_modules\csso\node_modules\mdn-data\api\index.js133517225759293619 0
 95C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\node_modules\ordered-binary\package.json133517225763912294 0
-78C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\dist\index.8c1c22dc.css133517278146942729 0
+78C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\dist\index.8c1c22dc.css133517281614636254 0
 119C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\node_modules\csso\node_modules\css-tree\lib\syntax\node\index.js133517225773808146 0
 89C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\node_modules\picomatch\lib\scan.js133517225762456415 0
 113C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\node_modules\@parcel\package-manager\test\fixtures\has-foo133517225768269958 1
@@ -3606,7 +3606,7 @@
 126C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\node_modules\lmdb\dependencies\lmdb-data-v1\libraries\liblmdb\intro.doc133517225771606039 0
 108C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\node_modules\@swc\helpers\_\_async_generator_delegate133517225773768259 1
 122C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\node_modules\lmdb\node_modules\node-addon-api\napi-inl.deprecated.h133517225761946215 0
-87C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\dist\logotype_white.d2cec638.svg133517278147154664 0
+87C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\dist\logotype_white.d2cec638.svg133517281615295022 0
 111C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\node_modules\lmdb\node_modules\node-addon-api\napi-inl.h133517225763616976 0
 89C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\node_modules\detect-libc\README.md133517225759858682 0
 107C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\node_modules\lmdb\node_modules\node-addon-api\napi.h133517225764193913 0
@@ -3837,7 +3837,7 @@
 79C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\node_modules\ini\LICENSE133517228017049600 0
 81C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\node_modules\ini\README.md133517228017488465 0
 105C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\node_modules\csso\node_modules\css-tree\lib\walker133517225773897439 1
-81C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\dist\index.18dbc454.js.map133517278146882868 0
+81C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\dist\index.18dbc454.js.map133517281614997912 0
 96C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\node_modules\inherits\inherits_browser.js133517228017194969 0
 125C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\node_modules\@parcel\optimizer-svgo\node_modules\mdn-data\api\index.js133517225759315166 0
 84C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\node_modules\inherits\LICENSE133517228017483422 0
@@ -3960,7 +3960,7 @@
 98C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\node_modules\css-what\lib\es\stringify.d.ts133517225766642302 0
 102C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\node_modules\htmlnano\lib\modules\minifySvg.cjs133517225765798498 0
 114C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\node_modules\htmlnano\lib\modules\removeEmptyAttributes.cjs133517225766547369 0
-89C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\dist\letterlogo_white.f63f98c7.svg133517278147234823 0
+89C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\dist\letterlogo_white.f63f98c7.svg133517281614656198 0
 126C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\node_modules\caniuse-lite\data\features\mdn-css-unicode-bidi-isolate.js133517225779065399 0
 102C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\node_modules\htmlnano\lib\modules\minifySvg.mjs133517225771189867 0
 114C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\node_modules\htmlnano\lib\modules\removeEmptyAttributes.mjs133517225771355085 0
@@ -5810,7 +5810,7 @@
 89C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\node_modules\argparse\CHANGELOG.md133517225763083210 0
 138C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\node_modules\@parcel\optimizer-svgo\node_modules\css-tree\lib\common\TokenStream.js133517225772200828 0
 80C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\node_modules\argparse\lib133517225761986271 1
-87C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\dist\logotype_black.b9bbf830.svg133517278147164639 0
+87C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\dist\logotype_black.b9bbf830.svg133517281615291309 0
 89C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\node_modules\argparse\package.json133517225762709814 0
 87C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\node_modules\anymatch\index.d.ts133517225898699205 0
 85C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\node_modules\anymatch\index.js133517225898600576 0
@@ -5870,7 +5870,7 @@
 110C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\node_modules\@swc\helpers\_\_class_private_field_update133517225774411097 1
 109C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\node_modules\@swc\helpers\_\_class_private_method_init133517225774461060 1
 122C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\node_modules\@swc\helpers\_\_class_static_private_field_destructure133517225774516059 1
-69C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\dist\sass.html133517278147310057 0
+69C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\dist\sass.html133517281614636254 0
 145C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\node_modules\@parcel\optimizer-htmlnano\node_modules\csso\lib\replace\AttributeSelector.js133517225764334266 0
 119C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\node_modules\@swc\helpers\_\_class_static_private_field_spec_get133517225774546066 1
 117C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\node_modules\@swc\helpers\_\_class_static_private_field_update133517225774605906 1
@@ -6760,7 +6760,7 @@
 132C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\node_modules\@parcel\optimizer-svgo\node_modules\css-tree\lib\lexer\search.js133517225771790902 0
 136C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\node_modules\@parcel\optimizer-svgo\node_modules\css-tree\lib\generator\create.js133517225766467512 0
 146C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\node_modules\@parcel\optimizer-svgo\node_modules\css-tree\lib\definition-syntax\generate.js133517225769161473 0
-84C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\dist\two_img_jpg.57e4b0c1.jpg133517278146739092 0
+84C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\dist\two_img_jpg.57e4b0c1.jpg133517281614676146 0
 142C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\node_modules\@parcel\optimizer-svgo\node_modules\css-tree\lib\definition-syntax\walk.js133517225772400626 0
 139C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\node_modules\@parcel\optimizer-svgo\node_modules\css-tree\lib\common\adopt-buffer.js133517225759442651 0
 131C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\node_modules\@parcel\optimizer-svgo\node_modules\css-tree\lib\common\List.js133517225770607697 0
@@ -7233,14 +7233,14 @@
 99C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\node_modules\.bin\update-browserslist-db.ps1133517225783063205 0
 77C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\dist\index.ec00b8f7.js133517222086753151 0
 81C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\dist\index.ec00b8f7.js.map133517222086818361 0
-70C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\dist\index.html133517278147310057 0
+70C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\dist\index.html133517281615037804 0
 89C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\dist\letterlogo_white.1864e2e4.svg133517222080922861 0
 77C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\dist\logo.cd13699a.svg133517218645481936 0
 83C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\dist\logo_white.1ca66947.png133517270431799234 0
-81C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\dist\one_img.0b2384b1.webp133517278146694090 0
+81C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\dist\one_img.0b2384b1.webp133517281614666166 0
 81C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\dist\one_img.f97bb4a7.webp133517222076201025 0
 84C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\dist\one_img_jpg.4053b64a.jpg133517222081622374 0
-84C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\dist\one_img_jpg.80c44132.jpg133517278146759027 0
+84C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\dist\one_img_jpg.80c44132.jpg133517281614656198 0
 83C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\dist\round-icon.259f5863.png133516972148848840 0
 81C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\dist\two_img.8f30f4b6.webp133517222081672281 0
 84C:\Users\jenif\Desktop\dt211g\moment3\css_preprocessor\dist\two_img_jpg.9f649d81.jpg133517222079305546 0
