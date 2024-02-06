@@ -5,6 +5,7 @@
 body {
     margin: 0 auto;
     text-align: center;
+    font: 100% base.$font-stack;
 }
 
 header {
@@ -12,10 +13,9 @@ header {
 }
 
 header>div {
+    @include base.size(100%, auto, 1200px);
     box-sizing: border-box;
-    max-width: 1200px;
     justify-content: space-between;
-    background-color: base.$light_color;
     display: flex;
     border-bottom: 1px solid rgb(243, 243, 243);
     align-items: center;
@@ -24,10 +24,15 @@ header>div {
 }
 
 section {
+    @include base.size(100%, auto, 650px);
     margin: 0 auto;
-    max-width: 650px;
     padding-top: 5em;
     padding-bottom: 15em;
+}
+
+p {
+    font: 100% base.$paragraph-text;
+    text-align: justify;
 }
 
 footer {
@@ -141,6 +146,60 @@ nav {
     top: -3px;
 }
 
+/* LIGHT DARK */
+
+@media (prefers-color-scheme: dark) {
+
+    header>div,
+    nav,
+    header,
+    body,
+    footer,
+    nav li>a,
+    .cross1,
+    .cross2,
+    .bars {
+        @include base.theme-colors($light-theme: false)
+    }
+
+    header>div {
+        border-bottom: transparent;
+    }
+
+    footer {
+        border-top: grey 1px solid;
+    }
+
+    #light-logo {
+        display: none;
+    }
+
+    nav {
+        a:hover {
+            color: base.$light_color;
+            border-bottom: base.$light_color 8px solid;
+        }
+
+        li:hover {
+            color: base.$primary-color;
+        }
+    }
+
+    .menu-btn {
+        background-color: transparent;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    #dark-logo {
+        display: none;
+    }
+
+    body,
+    header>div {
+        @include base.theme-colors($light-theme: true)
+    }
+}
 
 
 @media only screen and (min-width: 992px) {

@@ -5,86 +5,24 @@
 
 $font-stack: 'Poppins';
 $primary-color: #464646;
-$light_color: rgb(255, 255, 255); 
+$light_color: rgb(255, 255, 255);
 $dark_color: rgb(44, 44, 44);
-$paragraph: 'Inter';
+$paragraph-text: 'Inter';
 
-
-body {
-    font: 100% $font-stack;
+@mixin size($width, $height, $fullwidth) {
+    width: $width;
+    height: $height;
+    max-width: $fullwidth;
 }
 
-p {
-    font: 100% $paragraph;
-    text-align: justify;
-}
-
-/* LIGHT DARK */
-
-@media (prefers-color-scheme: dark) {
-
-    header>div,
-    nav {
-        background-color: $dark_color;
-    }
-
-    header {
-        background-color: $dark_color;
-
-        div {
-            border-bottom: transparent;
-        }
-    }
-    body {
-        color: $light_color;
-        background-color: $dark_color;
-    }
-
-    footer {
-        background-color: $dark_color;;
-        border-top: grey 1px solid;
-    }
-
-    #light-logo {
-        display: none;
-    }
-
-    nav li>a {
-        color: $light_color;
-    }
-
-    .cross1,
-    .cross2,
-    .bars {
+@mixin theme-colors($light-theme: true) {
+    @if $light-theme {
         background-color: $light_color;
-    }
-
-    nav {
-        a:hover {
-            color: $light_color;
-            border-bottom: $light_color 8px solid;
-            transition-duration: 0.4s;
-        }
-    
-        li:hover {
-            cursor: pointer;
-            color: $primary-color;
-        }
-    }
-
-    .menu-btn {
-        background-color: transparent;
-    }
-}
-
-@media (prefers-color-scheme: light) {
-    #dark-logo {
-        display: none;
-    }
-
-    body {
-        font: 100% $font-stack;
         color: $primary-color;
-        background-color: $light_color;
+    }
+
+    @else {
+        background-color: $dark_color;
+        color: $light_color;
     }
 }
