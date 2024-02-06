@@ -6,4 +6,155 @@ body {
     margin: 0 auto;
     padding: 5em;
     text-align: center;
+    max-width: 1280px;
+}
+
+.inline {
+    box-sizing: border-box;
+    width: 100%;
+    justify-content: space-between;
+    background-color: base.$bkgd_color;
+    display: flex;
+    align-items: center;
+    padding: 1em 0em 1em 1em;
+}
+
+nav {
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.71);
+    font-size: 1.4em;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 250px;
+    display: none;
+    background-color: base.$bkgd_color;
+
+    ul {
+        width: 100%;
+        list-style-type: none;
+        text-align: center;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    li {
+        padding: 1em 0.5em;
+        width: 100%;
+        text-align: left;
+    }
+
+    a {
+        text-decoration: none;
+        padding: 0 0.3em;
+        left: 0;
+        color: base.$primary-color;
+    }
+
+    a:hover {
+        color: base.$primary-color;
+        border-bottom: 3px solid black;
+        border-bottom: base.$primary-color 8px solid;
+        transition-duration: 0.4s;
+    }
+
+    li:hover {
+        cursor: pointer;
+        color: base.$primary-color;
+    }
+}
+
+/*
+nav #no-hover:hover {
+    border-bottom: 1px;
+}*/
+
+.menu-btn {
+    display: flex;
+    align-items: center;
+    padding: 8px 15px;
+    background-color: base.$bkgd_color;
+    border: none;
+    cursor: pointer;
+}
+
+.open {
+    margin: 0 1em;
+}
+
+.menu-btn:hover {
+    transform: scale(1.2);
+}
+
+.menu-icon {
+    margin-right: 10px;
+}
+
+.bars {
+    display: block;
+    width: 20px;
+    height: 3px;
+    background-color: base.$primary-color;
+    margin: 5px 0;
+}
+
+.menu-text {
+    font-size: 2em;
+    color: base.$primary-color;
+}
+
+.close {
+    margin: 1em 1.5em;
+    padding: 10px 15px;
+}
+
+.cross1 {
+    width: 25px;
+    transform: rotate(45deg);
+    position: relative;
+    background-color: base.$primary-color;
+    top: 5px;
+}
+
+.cross2 {
+    width: 25px;
+    transform: rotate(135deg);
+    position: relative;
+    background-color: base.$primary-color;
+    top: -3px;
+}
+
+@media only screen and (min-width: 992px) {
+    .menu-btn {
+        display: none;
+    }
+
+    #open-menu {
+        display: none !important;
+    }
+
+    nav {
+        display: block !important;
+        position: relative;
+        box-shadow: 0 0px 0px;
+        height: auto;
+        font-size: 1.4em;
+        width: auto;
+    }
+
+    nav ul {
+        height: 100%;
+    }
+
+    nav li {
+        display: inline;
+        padding: 1.2em 0;
+    }
+
+    .position {
+        border-bottom: base.$primary-color 8px solid;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        margin: 0 auto;
+    }
 }
