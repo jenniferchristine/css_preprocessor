@@ -8,6 +8,8 @@ $primary-color: #464646;
 $light_color: rgb(255, 255, 255);
 $dark_color: rgb(44, 44, 44);
 $paragraph-text: 'Inter';
+$brightened: lighten(#464646, 10%);
+$darkened: darken(#f3f3f3, 10%);
 
 @mixin size($width, $height, $fullwidth) {
     width: $width;

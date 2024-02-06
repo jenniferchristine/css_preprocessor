@@ -17,7 +17,7 @@ header>div {
     box-sizing: border-box;
     justify-content: space-between;
     display: flex;
-    border-bottom: 1px solid rgb(243, 243, 243);
+    border-bottom: 1px solid base.$darkened;
     align-items: center;
     padding: 1em 0em 1em 1em;
     margin: 0 auto;
@@ -155,10 +155,7 @@ nav {
     header,
     body,
     footer,
-    nav li>a,
-    .cross1,
-    .cross2,
-    .bars {
+    nav li>a {
         @include base.theme-colors($light-theme: false)
     }
 
@@ -167,7 +164,7 @@ nav {
     }
 
     footer {
-        border-top: grey 1px solid;
+        border-top: base.$brightened 1px solid;
     }
 
     #light-logo {
@@ -187,6 +184,12 @@ nav {
 
     .menu-btn {
         background-color: transparent;
+    }
+
+    .cross1,
+    .cross2,
+    .bars {
+        @include base.theme-colors($light-theme: true)
     }
 }
 
