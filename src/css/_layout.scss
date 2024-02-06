@@ -1,4 +1,5 @@
 @use 'base';
+@use 'component';
 
 body {
     margin: 0 auto;
@@ -49,33 +50,6 @@ p {
 h2 {
     font-size: 21px;
     text-decoration: underline;
-}
-
-a {
-    text-decoration: none;
-    color: base.$light_color;
-
-    .btn {
-        @include base.btn-text(20px, 600, 1px);
-        font: base.$paragraph-text;
-        padding: 1em;
-        border: 2px solid base.$darkened;
-        border-radius: 0.5em;
-    }
-}
-
-.return-btn {
-    @extend .btn;
-    background-color: base.$brightened;
-}
-
-.goto-btn {
-    @extend .btn;
-    background-color: base.$dark_color;
-}
-
-.btn:hover {
-    background-color: base.$darkest;
 }
 
 footer {
