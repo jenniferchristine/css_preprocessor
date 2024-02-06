@@ -4,19 +4,41 @@
 
 body {
     margin: 0 auto;
-    padding: 5em;
     text-align: center;
-    max-width: 1280px;
 }
 
-.inline {
-    box-sizing: border-box;
+header {
     width: 100%;
+}
+
+header>div {
+    box-sizing: border-box;
+    max-width: 1200px;
     justify-content: space-between;
-    background-color: base.$bkgd_color;
+    background-color: base.$light_color;
     display: flex;
+    border-bottom: 1px solid rgb(243, 243, 243);
     align-items: center;
     padding: 1em 0em 1em 1em;
+    margin: 0 auto;
+}
+
+section {
+    margin: 0 auto;
+    max-width: 650px;
+    padding-top: 5em;
+    padding-bottom: 15em;
+}
+
+footer {
+    background-color: base.$primary-color;
+    color: base.$light_color;
+    padding: 5em;
+
+    p {
+        text-align: center;
+        font-size: 12px;
+    }
 }
 
 nav {
@@ -28,7 +50,7 @@ nav {
     height: 100vh;
     width: 250px;
     display: none;
-    background-color: base.$bkgd_color;
+    background-color: base.$light_color;
 
     ul {
         width: 100%;
@@ -64,16 +86,11 @@ nav {
     }
 }
 
-/*
-nav #no-hover:hover {
-    border-bottom: 1px;
-}*/
-
 .menu-btn {
     display: flex;
     align-items: center;
     padding: 8px 15px;
-    background-color: base.$bkgd_color;
+    background-color: base.$light_color;
     border: none;
     cursor: pointer;
 }
@@ -123,6 +140,8 @@ nav #no-hover:hover {
     background-color: base.$primary-color;
     top: -3px;
 }
+
+
 
 @media only screen and (min-width: 992px) {
     .menu-btn {
