@@ -46,6 +46,11 @@ p {
     text-align: justify;
 }
 
+h2 {
+    font-size: 21px;
+    text-decoration: underline;
+}
+
 a {
     text-decoration: none;
     color: base.$light_color;
@@ -126,6 +131,11 @@ nav {
     li:hover {
         cursor: pointer;
         color: base.$primary-color;
+    }
+
+    .position {
+        border-bottom: base.$primary-color 8px solid;
+        margin: 0 auto;
     }
 }
 
@@ -273,12 +283,6 @@ nav {
     nav li {
         display: inline;
         padding: 1.2em 0;
-    }
-
-    .position {
-        @include base.btn-text(20px, 600, 0.5pxpx);
-        border-bottom: base.$primary-color 8px solid;
-        margin: 0 auto;
     }
 
     @media (prefers-color-scheme: dark) {
