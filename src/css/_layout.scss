@@ -34,7 +34,7 @@ section {
 
         img {
             border: base.$brightened solid 3px;
-            width: 100%;
+            max-width: 100%;
             box-sizing: border-box;
             border-radius: 0.5em;
         }
@@ -93,7 +93,6 @@ nav {
     height: 100vh;
     width: 250px;
     display: none;
-    margin-right: 2.5em;
     background-color: base.$light_color;
 
     ul {
@@ -264,6 +263,7 @@ nav {
         height: auto;
         font-size: 1.4em;
         width: auto;
+        margin-right: 2.5em;
     }
 
     nav ul {
