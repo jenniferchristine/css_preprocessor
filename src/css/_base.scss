@@ -1,0 +1,20 @@
+/*MIXINS, VARIABLER, TYPSNITT, TEXTSTORLEKAR, FÄRG OSV*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+$font-stack: 'Poppins';
+$primary-color: #eae4ee;
+$bkgd_color: rgb(193, 156, 207); 
+$paragraph: 'Inter';
+
+body {
+    font: 100% $font-stack;
+    color: $primary-color;
+    background-color: $bkgd_color;
+}
+
+p {
+    font: 100% $paragraph;
+    text-align: justify;
+}
