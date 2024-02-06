@@ -30,6 +30,19 @@ section {
     padding-bottom: 15em;
 }
 
+.grid {
+    display: flex;
+    gap: 2em;
+    padding-top: 5em;
+
+    img {
+        border: base.$brightened solid 3px;
+        width: 100%;
+        box-sizing: border-box;
+        border-radius: 0.5em;
+    }
+}
+
 p {
     font: 100% base.$paragraph-text;
     text-align: justify;
@@ -37,17 +50,19 @@ p {
 
 a {
     text-decoration: none;
+    color: base.$primary-color;
 
     .btn {
         @include base.btn-text(20px, 600, 1px);
         font: base.$paragraph-text;
         padding: 1em;
         border: 2px solid base.$darkened;
+        border-radius: 0.5em;
     }
 }
 
 .btn:hover {
-    @include base.theme-colors($light-theme: true);
+    @include base.theme-colors($light-theme: false);
 }
 
 .return-btn {
@@ -175,6 +190,10 @@ nav {
     footer,
     nav li>a {
         @include base.theme-colors($light-theme: false)
+    }
+
+    a {
+        color: base.$light_color;
     }
 
     header>div {
