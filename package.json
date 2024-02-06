@@ -9,10 +9,9 @@
   },
   "author": "Jennifer Jakobsson",
   "license": "ISC",
-  "dependencies": {
-    "parcel": "^2.11.0"
-  },
   "devDependencies": {
+    "parcel": "^2.11.0",
+    "sharp": "^0.31.3",
     "@parcel/transformer-sass": "^2.11.0"
   }
 }

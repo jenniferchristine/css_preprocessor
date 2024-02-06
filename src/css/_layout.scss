@@ -1,5 +1,3 @@
-/*HANTERAR UTSEENDE SÅ SOM FLEXBOX, GRID OSV*/
-
 @use 'base';
 
 body {
@@ -10,17 +8,17 @@ body {
 
 header {
     width: 100%;
-}
 
-header>div {
-    @include base.size(100%, auto, 1200px);
-    box-sizing: border-box;
-    justify-content: space-between;
-    display: flex;
-    border-bottom: 1px solid base.$darkened;
-    align-items: center;
-    padding: 1em 0em 1em 1em;
-    margin: 0 auto;
+    div {
+        @include base.size(100%, auto, 1200px);
+        box-sizing: border-box;
+        justify-content: space-between;
+        display: flex;
+        border-bottom: 1px solid base.$darkened;
+        align-items: center;
+        padding: 1em 0em 1em 1em;
+        margin: 0 auto;
+    }
 }
 
 section {
@@ -28,18 +26,18 @@ section {
     margin: 0 auto;
     box-sizing: border-box;
     padding: 5em 2em 10em 2em;
-}
 
-.img-holder {
-    display: flex;
-    gap: 2em;
-    padding-top: 5em;
+    .img-holder {
+        display: flex;
+        gap: 2em;
+        padding-top: 5em;
 
-    img {
-        border: base.$brightened solid 3px;
-        width: 100%;
-        box-sizing: border-box;
-        border-radius: 0.5em;
+        img {
+            border: base.$brightened solid 3px;
+            width: 100%;
+            box-sizing: border-box;
+            border-radius: 0.5em;
+        }
     }
 }
 
@@ -61,10 +59,6 @@ a {
     }
 }
 
-.btn:hover {
-    background-color: base.$darkest;
-}
-
 .return-btn {
     @extend .btn;
     background-color: base.$brightened;
@@ -73,6 +67,10 @@ a {
 .goto-btn {
     @extend .btn;
     background-color: base.$dark_color;
+}
+
+.btn:hover {
+    background-color: base.$darkest;
 }
 
 footer {
@@ -95,6 +93,7 @@ nav {
     height: 100vh;
     width: 250px;
     display: none;
+    margin-right: 2.5em;
     background-color: base.$light_color;
 
     ul {
@@ -277,10 +276,15 @@ nav {
     }
 
     .position {
+        @include base.btn-text(20px, 600, 0.5pxpx);
         border-bottom: base.$primary-color 8px solid;
-        font-weight: 600;
-        letter-spacing: 0.5px;
         margin: 0 auto;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        .position {
+            border-bottom: base.$light_color 8px solid;
+        }
     }
 }
 
