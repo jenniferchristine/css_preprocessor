@@ -2,6 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
 
 $font-stack: 'Poppins';
 $primary-color: #464646;
@@ -15,6 +16,12 @@ $darkened: darken(#f3f3f3, 10%);
     width: $width;
     height: $height;
     max-width: $fullwidth;
+}
+
+@mixin btn-text($size, $widetext, $space) {
+    font-size: $size;
+    font-weight: $widetext;
+    letter-spacing: $space;
 }
 
 @mixin theme-colors($light-theme: true) {

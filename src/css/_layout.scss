@@ -35,6 +35,26 @@ p {
     text-align: justify;
 }
 
+a {
+    text-decoration: none;
+
+    .btn {
+        @include base.btn-text(20px, 600, 1px);
+        font: base.$paragraph-text;
+        padding: 1em;
+        border: 2px solid base.$darkened;
+    }
+}
+
+.btn:hover {
+    @include base.theme-colors($light-theme: true);
+}
+
+.return-btn {
+    @extend .btn;
+    background-color: base.$darkened;
+}
+
 footer {
     background-color: base.$primary-color;
     color: base.$light_color;
@@ -146,8 +166,6 @@ nav {
     top: -3px;
 }
 
-/* LIGHT DARK */
-
 @media (prefers-color-scheme: dark) {
 
     header>div,
@@ -203,7 +221,6 @@ nav {
         @include base.theme-colors($light-theme: true)
     }
 }
-
 
 @media only screen and (min-width: 992px) {
     .menu-btn {
