@@ -259,8 +259,10 @@ nav {
     }
 
     @media (prefers-color-scheme: dark) {
-        .position {
-            border-bottom: base.$light_color 8px solid;
+        nav {
+            .position {
+                border-bottom: base.$light_color 8px solid;
+            }
         }
     }
 }
@@ -272,5 +274,12 @@ nav {
         img {
             width: 70%;
         }
+    }
+
+    #light-logo,
+    #dark-logo,
+    nav
+    #footer-logo {
+        width: 100%;
     }
 }
