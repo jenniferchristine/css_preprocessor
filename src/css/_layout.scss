@@ -44,11 +44,13 @@ section {
 #click-icon {
     display: none;
     width: 64.2px;
+    filter: invert(73%) sepia(86%) saturate(579%) hue-rotate(179deg) brightness(98%) contrast(100%);
 }
 
 .img-holder img:hover {
     transform: scale(1.1);
-    transition: 0.4s;
+    transition: 1s;
+    filter: invert(73%) sepia(86%) saturate(579%) hue-rotate(179deg) brightness(98%) contrast(100%);
 }
 
 p {
