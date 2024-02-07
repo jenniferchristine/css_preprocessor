@@ -1,1 +1,18 @@
 @use 'base';
+
+.hover_long {
+    width: 55px;
+    height: auto;
+    transition-property: width;
+    transition-duration: 2s;
+    overflow: hidden;
+    margin: 0 auto;
+
+    img {
+        width: 170px;
+    }
+}
+
+.hover_long:hover {
+    width: 170px;
+}
