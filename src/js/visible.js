@@ -12,3 +12,10 @@ clickIcon.addEventListener('click', function () {
     lightLogo.style.display = "block";
     clickIcon.style.display = "none";
 });
+
+/*document.getElementById('footer-logo').onclick = changeColor;   
+
+function changeColor() {
+    document.body.style.background = "purple";
+    return false;
+}*/   
