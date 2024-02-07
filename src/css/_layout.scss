@@ -41,6 +41,11 @@ section {
     }
 }
 
+#click-icon {
+    display: none;
+    width: 64.2px;
+}
+
 .img-holder img:hover {
     transform: scale(1.1);
     transition: 0.4s;
@@ -48,7 +53,7 @@ section {
 
 p {
     font: 100% base.$paragraph-text;
-    text-align: justify;
+    text-align: justify !important; 
 }
 
 h2 {

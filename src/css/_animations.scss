@@ -41,3 +41,43 @@
         animation: bounce 10s alternate;
     }
 }
+
+.box {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+}
+
+#black_circle {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    height: 100px;
+    background-color: base.$primary-color;
+    border-radius: 50%;
+    margin: 0 auto;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        width: 55px;
+    }
+
+    #j-left {
+        margin: -15px -5px 0 0;
+    }
+
+    #j-right {
+        margin-right: 5px;
+    }
+
+    #j-left:hover {
+        animation: bounce 10s alternate;
+    }
+
+    &:hover {
+        background-color: rgb(194, 204, 50);
+    }
+}
