@@ -16,3 +16,28 @@
 .hover_long:hover {
     width: 170px;
 }
+
+@keyframes bounce {
+    20% {
+        transform: rotate(180deg);
+    }
+
+    40% {
+        transform: translate(0, 725px);
+    }
+
+    60% {
+        transform: rotate(90deg);
+    }
+}
+
+.bouncing {
+    margin: 0 auto;
+    text-align: right;
+    max-width: 1200px;
+
+    img {
+        width: 20px;
+        animation: bounce 10s alternate;
+    }
+}

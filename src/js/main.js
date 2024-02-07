@@ -16,7 +16,7 @@ function toggleMenu() {
     let style = window.getComputedStyle(navMenuEl);
 
     //koll om navigering är synlig eller ej, ändrar display block/none
-    if(style.display === "none") {
+    if (style.display === "none") {
         navMenuEl.style.display = "block";
     } else {
         navMenuEl.style.display = "none";
