@@ -8,13 +8,42 @@
     overflow: hidden;
     margin: 0 auto;
 
+    &:hover {
+        width: 170px;
+    }
+
     img {
         width: 170px;
     }
 }
 
-.hover_long:hover {
-    width: 170px;
+#box {
+    width: 70px;
+    height: 70px;
+    transition-property: width;
+    transition-duration: 2s;
+    overflow: hidden;
+    display: flex;
+    background-color: base.$primary-color;
+    border-radius: 0.5em;
+
+    div>p {
+        margin-left: 7em;
+        padding-top: 0.5em;
+        font: base.$font-stack;
+        color: base.$light_color;
+    }
+
+    img {
+        width: 40px;
+        margin-left: 0.7em;
+        filter: invert(73%) sepia(86%) saturate(579%) hue-rotate(179deg) brightness(98%) contrast(100%);
+    }
+
+     &:hover {
+        transition: 1s;
+        filter: invert(73%) sepia(86%) saturate(579%) hue-rotate(179deg) brightness(98%) contrast(100%);
+    }
 }
 
 @keyframes bounce {
@@ -40,18 +69,6 @@
         width: 20px;
         animation: bounce 10s alternate;
     }
-}
-
-.box {
-    display: flex;
-    width: 100px;
-    height: 100px;
-    border: 1px solid rgb(0, 0, 0);
-}
-
-.box:hover {
-    transition: 1s;
-    filter: invert(73%) sepia(86%) saturate(579%) hue-rotate(179deg) brightness(98%) contrast(100%);
 }
 
 #black_circle {
