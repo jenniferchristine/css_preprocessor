@@ -41,6 +41,11 @@ section {
     }
 }
 
+.img-holder img:hover {
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+
 p {
     font: 100% base.$paragraph-text;
     text-align: justify;
@@ -278,8 +283,7 @@ nav {
 
     #light-logo,
     #dark-logo,
-    nav
-    #footer-logo {
+    nav #footer-logo {
         width: 100%;
     }
 }
