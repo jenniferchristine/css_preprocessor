@@ -53,12 +53,12 @@ section {
         max-width: 100%;
         box-sizing: border-box;
         border-radius: 0.5em;
+        transition: 1s;
     }
 }
 
 .img-holder img:hover {
     transform: scale(1.1);
-    transition: 1s;
     filter: invert(73%) sepia(86%) saturate(579%) hue-rotate(179deg) brightness(98%) contrast(100%);
 }
 
@@ -75,17 +75,17 @@ footer {
 }
 
 .hover_long {
-    @include base.transition(width, 0.5s);
+    @include base.transition(width, 1s);
     @include base.size(55px, auto);
     overflow: hidden;
     margin: 0 auto;
 
-    &:hover {
-        width: 100%;
-    }
-
     img {
         width: 160px;
+    }
+
+    &:hover {
+        width: 159px;
     }
 }
 
@@ -107,11 +107,11 @@ footer {
     img {
         width: 40px;
         margin-left: 0.7em;
+        transition: 1s;
         filter: invert(73%) sepia(86%) saturate(579%) hue-rotate(179deg) brightness(98%) contrast(100%);
     }
 
      &:hover {
-        transition: 1s;
         filter: invert(30%) sepia(86%) saturate(579%) hue-rotate(179deg) brightness(98%) contrast(100%);
     }
 }
