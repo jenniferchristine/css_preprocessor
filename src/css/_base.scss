@@ -11,10 +11,15 @@ $brightened: lighten(#464646, 10%);
 $darkened: darken(#f3f3f3, 10%);
 $darkest: darken(#a3a3a3, 80%);
 
-@mixin size($width, $height, $fullwidth) {
+@mixin maxsize($width, $height, $fullwidth) {
     width: $width;
     height: $height;
     max-width: $fullwidth;
+}
+
+@mixin size($wide, $high) {
+    width: $wide;
+    height: $high;
 }
 
 @mixin btn-text($size, $widetext, $space) {
@@ -34,3 +39,15 @@ $darkest: darken(#a3a3a3, 80%);
         color: $light_color;
     }
 }
+
+@mixin transition($transproperty, $transduration) {
+    transition-property: $transproperty;
+    transition-duration: $transduration;
+}
+
+@mixin align($align, $justify) {
+    align-items: $align;
+    justify-content: $justify;
+}
+
+

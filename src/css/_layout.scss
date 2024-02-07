@@ -4,25 +4,40 @@ body {
     margin: 0 auto;
     text-align: center;
     font: 100% base.$font-stack;
+
+    p {
+        font: 100% base.$paragraph-text;
+        text-align: justify;
+    }
+    
+    h2 {
+        font-size: 21px;
+        text-decoration: underline;
+    }
 }
 
 header {
     width: 100%;
 
+    #click-icon {
+        display: none;
+        width: 64.2px;
+        filter: invert(73%) sepia(86%) saturate(579%) hue-rotate(179deg) brightness(98%) contrast(100%);
+    }
+
     div {
-        @include base.size(100%, auto, 1200px);
-        box-sizing: border-box;
-        justify-content: space-between;
+        @include base.maxsize(100%, auto, 1200px);
+        @include base.align(center, space-between);
         display: flex;
+        box-sizing: border-box;
         border-bottom: 1px solid base.$darkened;
-        align-items: center;
         padding: 1em 0em 1em 1em;
         margin: 0 auto;
     }
 }
 
 section {
-    @include base.size(100%, auto, 650px);
+    @include base.maxsize(100%, auto, 650px);
     margin: 0 auto;
     box-sizing: border-box;
     padding: 5em 2em 10em 2em;
@@ -31,20 +46,14 @@ section {
         display: flex;
         gap: 2em;
         padding-top: 5em;
-
-        img {
-            border: base.$brightened solid 3px;
-            max-width: 100%;
-            box-sizing: border-box;
-            border-radius: 0.5em;
-        }
     }
-}
 
-#click-icon {
-    display: none;
-    width: 64.2px;
-    filter: invert(73%) sepia(86%) saturate(579%) hue-rotate(179deg) brightness(98%) contrast(100%);
+    .img-holder img {
+        border: base.$brightened solid 3px;
+        max-width: 100%;
+        box-sizing: border-box;
+        border-radius: 0.5em;
+    }
 }
 
 .img-holder img:hover {
@@ -53,15 +62,6 @@ section {
     filter: invert(73%) sepia(86%) saturate(579%) hue-rotate(179deg) brightness(98%) contrast(100%);
 }
 
-p {
-    font: 100% base.$paragraph-text;
-    text-align: justify;
-}
-
-h2 {
-    font-size: 21px;
-    text-decoration: underline;
-}
 
 footer {
     background-color: base.$primary-color;
@@ -74,16 +74,86 @@ footer {
     }
 }
 
+.hover_long {
+    @include base.transition(width, 0.5s);
+    @include base.size(55px, auto);
+    overflow: hidden;
+    margin: 0 auto;
+
+    &:hover {
+        width: 100%;
+    }
+
+    img {
+        width: 160px;
+    }
+}
+
+#box {
+    @include base.transition(width, 2s);
+    @include base.size(70px, 70px);
+    overflow: hidden;
+    display: flex;
+    background-color: base.$primary-color;
+    border-radius: 0.5em;
+
+    div>p {
+        margin-left: 7em;
+        padding-top: 0.5em;
+        font: base.$font-stack;
+        color: base.$light_color;
+    }
+
+    img {
+        width: 40px;
+        margin-left: 0.7em;
+        filter: invert(73%) sepia(86%) saturate(579%) hue-rotate(179deg) brightness(98%) contrast(100%);
+    }
+
+     &:hover {
+        transition: 1s;
+        filter: invert(30%) sepia(86%) saturate(579%) hue-rotate(179deg) brightness(98%) contrast(100%);
+    }
+}
+
+#black_circle {
+    @include base.align(center, center);
+    @include base.size(100px, 100px);
+    filter: saturate(50%) brightness(30%) contrast(86%);
+    display: flex;
+    flex-direction: column;
+    border-radius: 50%;
+    margin: 0 auto;
+    overflow: hidden;
+
+    img {
+        width: 55px;
+    }
+
+    #j-left {
+        margin: -15px -5px 0 0;
+    }
+    
+    &:hover {
+        transition: 1s;
+        background-color: base.$primary-color;
+        filter: invert(73%) sepia(86%) saturate(579%) hue-rotate(179deg) brightness(98%) contrast(100%);
+    }
+
+    #j-right {
+        margin-right: 5px;
+    }
+}
+
 nav {
+    @include base.size(250px, 100vh);
+    display: none;
+    position: absolute;
+    background-color: base.$light_color;
     box-shadow: 0 0px 10px rgba(0, 0, 0, 0.71);
     font-size: 1.4em;
-    position: absolute;
     right: 0;
     top: 0;
-    height: 100vh;
-    width: 250px;
-    display: none;
-    background-color: base.$light_color;
 
     ul {
         width: 100%;
@@ -108,7 +178,7 @@ nav {
 
     a:hover {
         color: base.$primary-color;
-        border-bottom: 3px solid black;
+        border-bottom: 3px solid base.$primary-color;
         border-bottom: base.$primary-color 8px solid;
         transition-duration: 0.4s;
     }
@@ -125,12 +195,12 @@ nav {
 }
 
 .menu-btn {
+    cursor: pointer;
     display: flex;
     align-items: center;
     padding: 8px 15px;
     background-color: base.$light_color;
     border: none;
-    cursor: pointer;
 }
 
 .open {
@@ -146,9 +216,8 @@ nav {
 }
 
 .bars {
+    @include base.size(20px, 3px);
     display: block;
-    width: 20px;
-    height: 3px;
     background-color: base.$primary-color;
     margin: 5px 0;
 }
@@ -252,12 +321,11 @@ nav {
     }
 
     nav {
+        @include base.size(auto, auto);
         display: block !important;
         position: relative;
         box-shadow: 0 0px 0px;
-        height: auto;
         font-size: 1.4em;
-        width: auto;
         margin-right: 2.5em;
     }
 
