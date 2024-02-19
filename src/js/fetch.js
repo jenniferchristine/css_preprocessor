@@ -9,14 +9,23 @@ window.onload = async () => {
             const data = await response.json();
 
             const coursesHT23 = data.filter(course => course.admissionRound === "HT2023");
-            coursesHT23.sort((a, b) => parseInt(b.applicantsTotal) - parseInt(a.applicantsTotal));
 
-            const top5Courses = coursesHT23.slice(0, 5);
-            const programNames = top5Courses.map(course => course.name);
-            const applicantsTotal = top5Courses.map(course => parseInt(course.applicantsTotal));
+            const courses = coursesHT23.filter(course => course.type === "Kurs");
+            const programs = coursesHT23.filter(course => course.type === "Program");
 
-            updateBarChartWithData(programNames, applicantsTotal);
-            updateRoundChartWithData(programNames, applicantsTotal);
+            courses.sort((a, b) => parseInt(b.applicantsTotal) - parseInt(a.applicantsTotal));
+            programs.sort((a, b) => parseInt(b.applicantsTotal) - parseInt(a.applicantsTotal));
+
+            const top6Courses = courses.slice(0, 6);
+            const top5Programs = programs.slice(0, 5);
+
+            const courseNames = top6Courses.map(course => course.name);
+            const courseApplicantsTotal = top6Courses.map(course => parseInt(course.applicantsTotal));
+            const programNames = top5Programs.map(program => program.name);
+            const programApplicantsTotal = top5Programs.map(program => parseInt(program.applicantsTotal));
+
+            updateBarChartWithData(courseNames, courseApplicantsTotal);
+            updateRoundChartWithData(programNames, programApplicantsTotal);
 
         } else {
             console.error("ERROR: " + response.statusText);
