@@ -249,6 +249,17 @@ nav {
     top: -3px;
 }
 
+#map {
+    box-sizing: border-box;
+    border: 2px black solid;
+    padding: 2em;
+    background-color: rgb(121, 138, 121);
+}
+
+#searchInput {
+    width: 70%;
+}
+
 @media (prefers-color-scheme: dark) {
 
     header>div,
