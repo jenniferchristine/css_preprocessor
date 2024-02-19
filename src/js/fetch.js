@@ -69,18 +69,18 @@ function updateRoundChartWithData(data, totalApplicants) {
                 label: 'Antal Sökande',
                 data: totalApplicants,
                 backgroundColor: [
-                    'rgba(255, 99, 132, 0.7)',
-                    'rgba(54, 162, 235, 0.7)',
-                    'rgba(255, 206, 86, 0.7)',
-                    'rgba(75, 192, 192, 0.7)',
-                    'rgba(153, 102, 255, 0.7)'
+                    'rgb(35, 87, 161)',
+                    'rgb(32, 185, 216)',
+                    'rgb(70, 70, 70)',
+                    'rgb(174, 213, 164)',
+                    'rgb(97, 181, 250)'
                 ],
                 borderColor: [
-                    'rgba(255, 99, 132, 1)',
-                    'rgba(54, 162, 235, 1)',
-                    'rgba(255, 206, 86, 1)',
-                    'rgba(75, 192, 192, 1)',
-                    'rgba(153, 102, 255, 1)'
+                    'rgb(24, 62, 116)',
+                    'rgb(21, 120, 140)',
+                    'rgb(31, 31, 31)',
+                    'rgb(128, 156, 121)',
+                    'rgb(67, 126, 174)'
                 ],
                 borderWidth: 1
             }]
