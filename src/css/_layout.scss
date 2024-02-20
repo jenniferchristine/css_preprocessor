@@ -10,7 +10,7 @@ body {
         text-align: left;
         line-height: 1.7em;
     }
-    
+
     h2 {
         font-size: 21px;
         text-decoration: underline;
@@ -56,6 +56,11 @@ section {
         border-radius: 0.5em;
         transition: 1s;
     }
+}
+
+#map-headline {
+    margin: 1.5em 0em 2em 0em;
+    font-size: 26px
 }
 
 .img-holder img:hover {
@@ -112,7 +117,7 @@ footer {
         filter: invert(73%) sepia(86%) saturate(579%) hue-rotate(179deg) brightness(98%) contrast(100%);
     }
 
-     &:hover {
+    &:hover {
         filter: invert(30%) sepia(86%) saturate(579%) hue-rotate(179deg) brightness(98%) contrast(100%);
     }
 }
@@ -134,7 +139,7 @@ footer {
     #j-left {
         margin: -15px -5px 0 0;
     }
-    
+
     &:hover {
         transition: 1s;
         background-color: base.$primary-color;
@@ -254,15 +259,26 @@ nav {
     border-radius: 1em;
     width: 100%;
 
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 2em 0em 7em 0em;
+    }
+
+    #searchBtn {
+        max-width: 60px;
+        width: 100%;
+    }
+
     #mapid {
         width: 100%;
     }
 
-    #searchInput {
-        @include base.size(20%, 130px);
+    div>#searchInput {
+        @include base.maxsize(100%, 130px, 20%);
         border-radius: 0.5em;
         border: base.$primary-color 1px solid;
-        margin: 3em 0em 7em 0em;
         text-align: center;
         background-color: base.$primary-color;
         font-size: 30px;
@@ -272,11 +288,22 @@ nav {
             outline: 2px base.$primary-color;
             background-color: base.$light_color;
             color: base.$primary-color;
+            filter: brightness(75%);
         }
-    
+
         &::placeholder {
             font-size: 30px;
             color: base.$light_color;
+        }
+
+        &:active {
+            background-color: base.$light_color;
+            filter: brightness(75%);
+        }
+
+        &:hover {
+            transition: 1s;
+            filter: brightness(75%);
         }
     }
 }
@@ -393,5 +420,18 @@ nav {
     #dark-logo,
     nav #footer-logo {
         width: 100%;
+    }
+
+    #searchInput {
+        max-width: 100% !important;
+        border-radius: 0 !important;
+    }
+
+    #map div {
+        display: block;
+
+        #searchBtn {
+            margin-top: 1em;
+        }
     }
 }
