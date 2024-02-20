@@ -50,6 +50,7 @@ function updateBarChartWithData(data, totalApplicants) {
             }]
         },
         options: {
+            indexAxis: "y",
             scales: {
                 y: {
                     beginAtZero: true

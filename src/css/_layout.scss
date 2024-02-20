@@ -276,9 +276,10 @@ nav {
     div>#searchInput {
         @include base.maxsize(100%, 130px, 20%);
         border-radius: 0.5em;
-        border: base.$primary-color 1px solid;
+        box-sizing: border-box;
+        border: base.$primary-color 10px solid;
         text-align: center;
-        background-color: base.$primary-color;
+        background-color: #585858;
         font-size: 30px;
         color: base.$light_color;
 
@@ -304,6 +305,13 @@ nav {
             filter: brightness(75%);
         }
     }
+}
+
+.line {
+    background-color:rgb(204, 204, 204);
+    height: 3px;
+    width: 100%;
+
 }
 
 #search-field {
