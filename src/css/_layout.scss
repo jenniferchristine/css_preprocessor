@@ -251,33 +251,35 @@ nav {
 
 #map {
     box-sizing: border-box;
-    padding: 2em;
-    background-color: rgb(121, 138, 121);
     border-radius: 1em;
+    width: 100%;
+
+    #mapid {
+        width: 100%;
+    }
 
     #searchInput {
-        @include base.size(70%, 40px);
-        border-radius: 2em;
-        border: none;
-        margin-bottom: 3em;
-    
+        @include base.size(20%, 130px);
+        border-radius: 0.5em;
+        border: base.$primary-color 1px solid;
+        margin: 3em 0em 7em 0em;
+        text-align: center;
+        background-color: base.$primary-color;
+        font-size: 30px;
+        color: base.$light_color;
+
         &:focus {
-            outline: none;
+            outline: 2px base.$primary-color;
+            background-color: base.$light_color;
+            color: base.$primary-color;
         }
     
         &::placeholder {
-            font-size: 14px;
-            text-indent: 1em;
+            font-size: 30px;
+            color: base.$light_color;
         }
     }
-    
 }
-
-/*
-#searchInput:hover {
-    transition: 0.4s;
-    filter: invert(73%) sepia(86%) saturate(579%) hue-rotate(179deg) brightness(98%) contrast(100%);
-}*/
 
 @media (prefers-color-scheme: dark) {
 
