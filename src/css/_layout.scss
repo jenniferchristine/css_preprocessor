@@ -1,13 +1,11 @@
 @use 'base';
 
 body {
+    @include base.text(center, 100% base.$font-stack);
     margin: 0 auto;
-    text-align: center;
-    font: 100% base.$font-stack;
 
     p {
-        font: 100% base.$paragraph-text;
-        text-align: left;
+        @include base.text(left, 100% base.$paragraph-text);
         line-height: 1.7em;
     }
 
@@ -70,8 +68,7 @@ section {
 
 
 footer {
-    background-color: base.$primary-color;
-    color: base.$light_color;
+    @include base.color(base.$primary-color, base.$light_color);
     padding: 5em;
 
     p {
@@ -271,27 +268,26 @@ nav {
 
     #mapid {
         width: 100%;
+        z-index: -1;
     }
 
     div>#searchInput {
-        @include base.maxsize(100%, 130px, 20%);
-        border-radius: 0.5em;
+        @include base.maxsize(100%, 100px, 30%);
+        @include base.btn-text(25px, 900, 1px);
+        @include base.text(center, 100% base.$font-stack);
+        @include base.color(#585858, base.$light_color);
         box-sizing: border-box;
-        border: base.$primary-color 10px solid;
-        text-align: center;
-        background-color: #585858;
-        font-size: 30px;
-        color: base.$light_color;
+        border: base.$primary-color 5px solid;
 
         &:focus {
+            @include base.btn-text(25px, 300, 1px);
+            @include base.color(base.$light_color, base.$primary-color);
             outline: 2px base.$primary-color;
-            background-color: base.$light_color;
-            color: base.$primary-color;
             filter: brightness(75%);
         }
 
         &::placeholder {
-            font-size: 30px;
+            @include base.btn-text(25px, 300, 1px);
             color: base.$light_color;
         }
 
@@ -308,16 +304,14 @@ nav {
 }
 
 .line {
+    @include base.size(100%, 3px);
     background-color:rgb(204, 204, 204);
-    height: 3px;
-    width: 100%;
-
 }
 
 #search-field {
+    @include base.align(center, center);
+    @include base.btn-text(25px, 300, 1px);
     display: flex;
-    justify-content: center;
-    align-items: center;
     margin: 5em 0em 8em 0em;
 }
 
@@ -327,7 +321,6 @@ nav {
 }
 
 @media (prefers-color-scheme: dark) {
-
     header>div,
     nav,
     header,

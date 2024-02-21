@@ -22,6 +22,16 @@ $darkest: darken(#a3a3a3, 80%);
     height: $high;
 }
 
+@mixin color($bkgd, $textcolor) {
+    background-color: $bkgd;
+    color: $textcolor;
+}
+
+@mixin text($align, $font) {
+    text-align: $align;
+    font: $font;
+}
+
 @mixin btn-text($size, $widetext, $space) {
     font-size: $size;
     font-weight: $widetext;
