@@ -37,6 +37,19 @@ window.onload = async () => {
 
 function updateBarChartWithData(data, totalApplicants) {
     const ctx = document.getElementById('barChart');
+    
+    function updateChart() {
+        let labels;
+        if (window.innerWidth <= 680) {
+            labels = new Array(data.length).fill('');
+        } else {
+            labels = data;
+        }
+        
+        barChart.data.labels = labels;
+        barChart.update();
+    }
+
     const barChart = new Chart(ctx, {
         type: 'bar',
         data: {
@@ -58,7 +71,11 @@ function updateBarChartWithData(data, totalApplicants) {
             }
         }
     });
+    window.addEventListener('resize', function () {
+        updateChart();
+    });
 }
+
 
 function updateRoundChartWithData(data, totalApplicants) {
     const ctx = document.getElementById('doughnutChart');

@@ -321,6 +321,11 @@ nav {
     margin: 5em 0em 8em 0em;
 }
 
+.chart-container {
+    box-sizing: border-box;
+    padding: 0em 3em 0em 3em;
+}
+
 @media (prefers-color-scheme: dark) {
 
     header>div,
